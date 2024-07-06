@@ -32,7 +32,6 @@
   # Sample Api Response for Borrow book
 
   1)post http://localhost:8080/swagger-ui/index.html#/user-login-controller/logInUser
-  2) post http://localhost:8080/swagger-ui/index.html#/book-controller/borrowBook
 
      + User can login with mobile number and password and using uuid key can borrow book
 
@@ -51,4 +50,27 @@
                "userLoginTime": 2024,7,6,20,00,00
  
             }
+
+  2) post http://localhost:8080/swagger-ui/index.html#/book-controller/borrowBook
+
+       Sample Request Body for Borrow book
+
+          "key": "7961"
+          "bookId": 4
+  
+        Sample Response Body
+
+           {
+               "bookId": 4,
+               "author": "J.R.R. Tolkien",
+               "title": " The Hobbit",
+               "availability": false,
+               "borrowedBy": {
+               "userId": 1,
+               "userName": "sovmiya",
+               "mobile": "9123458900",
+               "userPassword": "sovmi1705"
+                      }
+             }
+
   
