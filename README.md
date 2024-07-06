@@ -31,8 +31,8 @@
 
   # Sample Api Response for Borrow book
 
-  post http://localhost:8080/swagger-ui/index.html#/user-login-controller/logInUser
-  post http://localhost:8080/swagger-ui/index.html#/book-controller/borrowBook
+  1)post http://localhost:8080/swagger-ui/index.html#/user-login-controller/logInUser
+  2) post http://localhost:8080/swagger-ui/index.html#/book-controller/borrowBook
 
      + User can login with mobile number and password and using uuid key can borrow book
 
@@ -42,5 +42,13 @@
               "mobile": "9123458900",
               "userPassword": "sovmi1705"
             }
-     
+
+       Sample Response Body
+
+           {
+               "userId": 1,
+               "uuid": "7961",
+               "userLoginTime": 2024,7,6,20,00,00
+ 
+            }
   
